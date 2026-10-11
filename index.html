@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tri Aulia - Athlete Badminton Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            red: '#E63946',
+                            gold: '#FFB703',
+                            dark: '#0F172A',
+                            navy: '#1E293B',
+                            accent: '#38BDF8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #FFB703 0%, #E63946 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-brand-red flex items-center justify-center font-bold text-xl text-white shadow-lg shadow-brand-red/30 group-hover:scale-105 transition-transform">
+                    TA
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-wide block leading-none">TRI AULIA</span>
+                    <span class="text-xs text-brand-gold font-medium tracking-wider">BADMINTON ATHLETE</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-brand-gold transition-colors">Tentang Saya</a>
+                <a href="#skills" class="hover:text-brand-gold transition-colors">Gaya & Skill</a>
+                <a href="#inspirations" class="hover:text-brand-gold transition-colors">Inspirasi Juara</a>
+                <a href="#achievements" class="hover:text-brand-gold transition-colors">Prestasi & Target</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-brand-red hover:bg-red-700 font-semibold text-white shadow-lg shadow-brand-red/20 transition-all hover:-translate-y-0.5">Kontak</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Nav -->
+        <div id="mobileMenu" class="hidden md:hidden bg-brand-navy border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block py-2 text-slate-200 hover:text-brand-gold">Tentang Saya</a>
+            <a href="#skills" class="block py-2 text-slate-200 hover:text-brand-gold">Gaya & Skill</a>
+            <a href="#inspirations" class="block py-2 text-slate-200 hover:text-brand-gold">Inspirasi Juara</a>
+            <a href="#achievements" class="block py-2 text-slate-200 hover:text-brand-gold">Prestasi & Target</a>
+            <a href="#contact" class="block py-2 text-brand-gold font-semibold">Kontak Saya</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen pt-28 pb-16 hero-bg flex items-center relative overflow-hidden">
+        <!-- Decorative Glow Effects -->
+        <div class="absolute top-1/4 -right-20 w-96 h-96 bg-brand-red/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 -left-20 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-brand-gold text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-location-dot"></i> Tolitoli, Sulawesi Tengah
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none">
+                        Mengejar Mimpi <br>
+                        <span class="gradient-text">Juara Dunia</span> Badminton
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        Halo! Saya <span class="text-white font-semibold">Tri Aulia</span>, atlet bulu tangkis muda yang berdedikasi penuh melatih fisik, mental, dan teknik untuk mengharumkan nama Indonesia di panggung internasional.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#contact" class="px-7 py-3.5 rounded-xl bg-brand-red hover:bg-red-700 font-semibold text-white shadow-lg shadow-brand-red/25 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+                        </a>
+                        <a href="#skills" class="px-7 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 font-semibold text-slate-200 border border-slate-700 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-shuttlecock"></i> Lihat Profil Latihan
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats Banner -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-brand-gold">100%</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase mt-1">Dedikasi Latihan</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-brand-red">Tolitoli</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase mt-1">Kota Asal</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-brand-accent">BWF</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase mt-1">Target Pentas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic Card -->
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-gradient-to-br from-slate-800 to-slate-900 p-6 sm:p-8 rounded-3xl border border-slate-700/60 shadow-2xl">
+                        <div class="text-center space-y-4">
+                            <div class="w-32 h-32 mx-auto rounded-full bg-slate-700 border-4 border-brand-red flex items-center justify-center relative overflow-hidden shadow-xl">
+                                <i class="fa-solid fa-user-ninja text-6xl text-slate-300"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Tri Aulia</h3>
+                                <p class="text-sm text-brand-gold font-medium">Badminton Player</p>
+                            </div>
+                            <div class="bg-brand-dark/70 p-4 rounded-xl text-left text-xs space-y-2 text-slate-300 border border-slate-800">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-500">Spesialisasi:</span>
+                                    <span class="font-semibold text-slate-200">Tunggal / Ganda</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-500">Pegangan Raket:</span>
+                                    <span class="font-semibold text-slate-200">Kanan (Right-Handed)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-500">Gaya Main:</span>
+                                    <span class="font-semibold text-slate-200">Aggressive / Counter</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-brand-navy border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Profil Ringkas</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Tentang Perjalanan Saya</h3>
+                <div class="w-16 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-4 text-slate-300 leading-relaxed">
+                    <p>
+                        Saya lahir dan dibesarkan di <strong class="text-white">Kabupaten Tolitoli, Sulawesi Tengah</strong>. Sejak kecil, lapangan bulu tangkis telah menjadi tempat impian saya menempa kedisiplinan dan daya juang.
+                    </p>
+                    <p>
+                        Kekaguman saya terhadap performa para <strong class="text-brand-gold">juara dunia internasional</strong> di panggung bulu tangkis menjadi bahan bakar semangat saya untuk terus mengejar standar permainan tingkat tinggi.
+                    </p>
+                    <p>
+                        Bagi saya, bulu tangkis bukan sekadar olahraga, melainkan tentang kerja keras, ketangkasan berpikir dalam hitungan detik, serta mentalitas pantang menyerah hingga poin terakhir.
+                    </p>
+                </div>
+
+                <!-- Personal Quote Card -->
+                <div class="bg-slate-800/60 p-8 rounded-2xl border border-slate-700/50 relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-brand-red/30 absolute top-6 left-6"></i>
+                    <p class="text-lg font-medium text-slate-200 italic relative z-10 pt-4 mb-4">
+                        "Berlatih dengan disiplin hari ini untuk menjadi juara di masa depan. Setiap tetes keringat di lapangan Tolitoli adalah langkah awal menuju podium internasional."
+                    </p>
+                    <div class="font-bold text-brand-gold">— Tri Aulia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLAYSTYLE & SKILLS -->
+    <section id="skills" class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Gaya Bermain & Teknik</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Keahlian Lapangan</h3>
+                <div class="w-16 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Grid Skills -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-slate-800/40 p-6 rounded-2xl border border-slate-800 hover:border-brand-red/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-red/20 text-brand-red flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">Smash Tajam & Cepat</h4>
+                    <p class="text-sm text-slate-400">Mengandalkan timbulan tenaga dan akurasi sudut pukulan tajam untuk mengunci poin penting.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-slate-800/40 p-6 rounded-2xl border border-slate-800 hover:border-brand-gold/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-gold/20 text-brand-gold flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-person-running"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">Footwork Lincah</h4>
+                    <p class="text-sm text-slate-400">Pergerakan kaki yang cepat dan seimbang untuk menjangkau setiap sudut lapangan.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-slate-800/40 p-6 rounded-2xl border border-slate-800 hover:border-brand-accent/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-accent/20 text-brand-accent flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">Kontrol Net Cermat</h4>
+                    <p class="text-sm text-slate-400">Permainan net yang tipis dan halus untuk memancing lawan melakukan kesalahan.</p>
+                </div>
+            </div>
+
+            <!-- Interactive Skill Ratings -->
+            <div class="mt-12 bg-slate-800/30 p-8 rounded-2xl border border-slate-800">
+                <h4 class="text-lg font-bold text-white mb-6">Atribut Performa Latihan</h4>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-300">Stamina & Ketahanan Fisik</span>
+                            <span class="text-brand-gold">88%</span>
+                        </div>
+                        <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-brand-gold rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-300">Kecepatan & Agilitas</span>
+                            <span class="text-brand-red">85%</span>
+                        </div>
+                        <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-brand-red rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-300">Variasi Pukulan (Drop / Netting)</span>
+                            <span class="text-brand-accent">82%</span>
+                        </div>
+                        <div class="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-brand-accent rounded-full" style="width: 82%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSPIRATION SECTION -->
+    <section id="inspirations" class="py-20 bg-brand-navy border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Role Model</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Inspirasi Juara Dunia</h3>
+                <p class="text-slate-400 text-sm mt-3">Mengambil pelajaran dari ketangguhan dan teknik para legenda internasional.</p>
+                <div class="w-16 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Inspiration Card 1 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-gold text-2xl mb-3"><i class="fa-solid fa-trophy"></i></div>
+                        <h4 class="text-xl font-bold text-white mb-2">Mental Pertandingan</h4>
+                        <p class="text-slate-300 text-sm">
+                            Mempelajari cara para pemain kelas dunia tetap tenang dan fokus tinggi di poin-poin krusial penentuan kemenangan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-700 text-xs text-slate-400">
+                        Inspirasi: Konsistensi Legenda BWF
+                    </div>
+                </div>
+
+                <!-- Inspiration Card 2 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-red text-2xl mb-3"><i class="fa-solid fa-fire"></i></div>
+                        <h4 class="text-xl font-bold text-white mb-2">Kedisiplinan Latihan</h4>
+                        <p class="text-slate-300 text-sm">
+                            Mengadopsi etos kerja dan porsi latihan ketat para atlet internasional untuk membentuk fisik dan refleks terbaik.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-700 text-xs text-slate-400">
+                        Inspirasi: Etos Kerja Atlet Dunia
+                    </div>
+                </div>
+
+                <!-- Inspiration Card 3 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-accent text-2xl mb-3"><i class="fa-solid fa-chess"></i></div>
+                        <h4 class="text-xl font-bold text-white mb-2">Taktik & Strategi</h4>
+                        <p class="text-slate-300 text-sm">
+                            Menganalisis variasi serangan dan rotasi posisi cepat dalam pertandingan internasional level tinggi.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-700 text-xs text-slate-400">
+                        Inspirasi: Analisis Match Internasional
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARGETS & CONTACT -->
+    <section id="achievements" class="py-20 bg-brand-dark">
